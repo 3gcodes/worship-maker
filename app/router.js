@@ -1,5 +1,5 @@
 App.Router.map(function() {
-	this.resource('songs', { path: '/' }, function() {
+	this.resource('songs' , function() {
 
 	});
 	this.resource('about');
