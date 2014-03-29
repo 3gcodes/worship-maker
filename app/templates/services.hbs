@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-sm-3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Services</div>
+      {{#each}}
+        <div class="list-group">
+          {{#link-to 'service' this class="list-group-item"}}
+            <span class="badge">6</span>
+            {{dateCreated}}
+            <small class="text-muted">by {{createdBy}}</small>
+          {{/link-to}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="col-sm-9">{{outlet}}</div>
+</div>
